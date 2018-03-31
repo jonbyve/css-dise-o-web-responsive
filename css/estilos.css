@@ -1,0 +1,232 @@
+body{
+  animation-name: entrada;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+
+@keyframes entrada {
+	0% {
+		position: relative;
+    margin-top: 150px;
+	}
+	60% {
+		position: relative;
+    margin-top: -5px;
+}
+	100% {
+		position: relative;
+    margin-top: 0px;
+}
+}
+
+header h1{
+  text-shadow: 2px 2px 2px #02010a;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 1em;
+}
+
+header a{
+  color: white;
+  padding: 1em
+}
+
+#encabezado {
+	background: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%
+}
+
+#encabezado .banner div {
+	text-align: right;
+  margin-right: 30px;
+	width: 50%;
+  color: white;
+}
+
+.banner {
+display: flex;
+flex-direction: row;
+font-family: pattaya;
+}
+
+#imagenes{
+  width: 100%
+}
+
+#imgcentral{
+  background: #82c3a6;
+  text-align: center;
+  width: 100%
+}
+
+#imgcentral img {
+  width: 80%;
+  margin  : 0.5em;
+}
+
+#imgsecundaria{
+  background: #d5c75f;
+  text-align: center;
+  width: 100%
+}
+
+#imgsecundaria img {
+  width: 100%;
+  margin  : 1em;
+  border: solid 1px;
+}
+
+.contenedor {
+display: flex;
+flex-direction: row;
+font-family: pattaya;
+}
+
+.contenedor a{
+  color: black;
+  padding: 1em
+}
+
+#paisaje img{
+	transition-property: transform;
+	transition-duration: 2s;
+
+}
+
+#paisaje img:hover{
+  -ms-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	transform: rotate(10deg);
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+
+#retrato img:hover{
+  animation-name: desplazamiento;
+  animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+
+@keyframes desplazamiento {
+	0% {
+		position: relative;
+    top: 0px;
+		left: 0px;
+	}
+	50% {
+		position: relative;
+    top: -5px;
+		left: 20px;
+	}
+	100% {
+		position: relative;
+    top: 0px;
+		left: 0px;
+	}
+}
+
+#desenfoque {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+#sepia {
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+.scalagrises{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#contactos{
+  width: 25%
+}
+
+#terminos{
+  width: 25%
+}
+
+#redes-sociales{
+  width: 25%
+}
+
+#derechos{
+  width: 25%
+}
+
+#pie{
+  background: #C6d5c5;
+  text-align: left;
+  padding-left: 1em;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#redes-sociales img{
+  width: 20px;
+}
+
+#derechos img{
+  width: 60px;
+}
+
+
+@font-face {
+	font-family: pattaya;
+	src: url(../fuentes/pattaya.ttf);
+}
+
+@media (max-width:420px) {
+
+  .banner {
+  display: flex;
+  flex-direction: column;
+  font-family: pattaya;
+  }
+  .banner h1{
+    text-align: center;
+  }
+
+  #encabezado .banner div{
+    text-align: center;
+    margin-right: 10px;
+    width: 100%;
+    color: white;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    font-family: pattaya;
+  }
+
+  #imgsecundaria img {
+    width: 80%;
+    border: solid 1px;
+  }
+
+  #contactos{
+    width: 100%
+  }
+
+  #terminos{
+    width: 100%
+  }
+
+  #redes-sociales{
+    width: 100%
+  }
+
+  #derechos{
+    width: 100%
+  }
+}
