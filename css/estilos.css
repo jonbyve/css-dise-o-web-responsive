@@ -11,15 +11,15 @@ body{
 @keyframes entrada {
 	0% {
 		position: relative;
-    margin-top: 150px;
+    margin-top: 150%;
 	}
 	60% {
 		position: relative;
-    margin-top: -5px;
+    margin-top: -5%;
 }
 	100% {
 		position: relative;
-    margin-top: 0px;
+    margin-top: 0%;
 }
 }
 
